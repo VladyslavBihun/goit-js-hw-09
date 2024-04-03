@@ -71,8 +71,6 @@ const container = document.querySelector(".gallery");
 
 container.insertAdjacentHTML("afterbegin", createMarkup(images));
 
-//  container.addEventListener("click", handleClick);
-
 function createMarkup(imagesArray) {
     return imagesArray
         .map((img) => `
@@ -88,5 +86,5 @@ function createMarkup(imagesArray) {
 let gallery = new SimpleLightbox('.gallery a', { 
     sourceAttr: "href",
     captionsData: "alt",
-    captionDelay: "250"
+    captionDelay: 250
  });
