@@ -31,7 +31,7 @@ function submitForm(event) {
 
     event.preventDefault();
 
-    if (inputEmail.value === "" || textarea.value === "") {
+    if (inputEmail.value.trim() === "" || textarea.value.trim() === "") {
         alert("Please fill in both fields.");
         return
     };
