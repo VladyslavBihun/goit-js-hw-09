@@ -28,8 +28,21 @@ textarea.value = message ?? "";
 form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
+
     event.preventDefault();
-    console.log(parsedFeedback);
+
+    if (inputEmail.value === "" || textarea.value === "") {
+        alert("Please fill in both fields.");
+        return
+    };
+
+    const currentValue = {
+        Email: inputEmail.value.trim(),
+        Message: textarea.value.trim()
+    };
+    console.log(currentValue);
+
     localStorage.removeItem(localStorageKey);
     form.reset();
+
 }
