@@ -4,5 +4,5 @@ import{S as a}from"./vendor-870f0eb5.js";const i=[{preview:"https://cdn.pixabay.
         <img class="gallery-image" src="${p.preview}" alt="${p.description}" />
         </a>
         </li>
-        `).join("")}new a(".gallery a",{sourceAttr:"href",captionsData:"alt",captionDelay:"250"});
-//# sourceMappingURL=1-gallery-2d4dcc9c.js.map
+        `).join("")}new a(".gallery a",{sourceAttr:"href",captionsData:"alt",captionDelay:250});
+//# sourceMappingURL=1-gallery-b2c55258.js.map
